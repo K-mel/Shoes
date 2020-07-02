@@ -1,0 +1,82 @@
+@charset "utf_8";
+
+/*css global du site*/
+
+body {
+	max-width: 1220px;
+	margin:auto ;
+	font-family: 'Lora', serif;
+	}
+
+header img {
+	margin-top: 2%;
+	max-width: 100%;
+}
+
+h1 {
+	position: absolute;
+	margin-top: -12%; 
+	margin-left: 28%;
+	font-size: 5vw;
+	font-family: 'Pinyon Script';
+	z-index: 1;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+}
+
+.bordurefin {
+	background-color: black;
+	height: 15px;
+}
+
+.factwit {
+	display: flex;
+	margin-top: 8%;
+	margin-bottom: 1%;
+	margin-left: 89%;
+}
+
+
+@media screen and (max-width:1272px) {
+
+	h1 {
+	position: absolute;
+	margin-top: -18%; 
+	margin-left: 45%;
+	font-size: 5vw;
+	font-family: 'Pinyon Script';
+	z-index: 1;
+}
+
+}
+
+@media screen and (max-width:850px) {
+	
+	footer {
+		width: 80%;
+		margin: 0px auto;
+		font-size: 12px;
+	}
+
+	.factwit {
+	margin-left: 50%;
+	}
+}
+
+@media screen and (max-width:760px) {
+
+    header h1 {
+	 	position: absolute;
+		margin-top: -18%;
+		margin-left: 44%;
+		font-size: 60px;
+}
+
+.factwit {
+	margin-left: 40%;
+	}
+}
+

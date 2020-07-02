@@ -1,0 +1,200 @@
+@charset "utf_8";
+
+/* CSS menu du site*/
+
+	/* masque les boutons open close et le mot menu */
+
+#open, #close, .menu  {
+	display:none;
+}
+
+/* mise en forme de la zone de recherche*/
+input {
+	display: flex;
+	position: relative;
+	top:-27px;
+	width: 192.3px;
+	height: 33px;
+	background-color: #4b4b4b;
+	color: white;
+	font-size: 18px;
+	border: 0;
+}
+
+/* mise en forme de la zone de recherche*/
+input::placeholder {
+	background-color: #4b4b4b;
+	font-size: 12px;
+	text-align: left;
+	font-style: italic;
+	color: grey;
+}
+/* menu de navigation*/
+.navigation {
+	border-bottom: solid 2px black;
+	height: 60px;
+	margin-bottom: 2%;
+	margin-top: -4%
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+}
+
+nav ul li {
+	padding-right: 10%;
+	margin-top: 3%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+nav ul li a:hover {
+	border-top: 5px solid orange;
+	border-radius: 5px;
+}
+
+/* taille de la loupe*/
+.loupe {
+	width: 28px;
+	height: 25px;
+	background: none;
+}
+
+#recherche {
+	display: flex;
+	position: relative;
+	margin-left: 80%;
+}
+
+.boutonloupe {
+	display: flex;
+	position: relative;
+	margin-left: 1173.9px;
+	margin-top: -45px;
+	border: 0;
+	background: none;
+
+}
+
+@media screen and (max-width:760px) {
+
+#open {
+	display:block;
+	position:absolute;
+	top:210px;
+	left:30px;
+	background-color:#d97634;
+	border-radius: 50%;
+	color: #3eea41;
+	border: 0px;
+	width: 60px;
+	height: 60px;
+	font-size: 40px;
+	text-align: center;
+}
+
+
+#close {
+	display:block;
+	position:fixed;
+	top:5px;
+	right:10px;
+	font-size:2em;
+	color:black;
+	background-color:transparent;
+	border:none;
+}
+
+/* ajoute la class open du script js à la nav */
+.open{
+	transform:translateX(0px);
+}
+
+nav {
+	position:fixed;
+	top:0;
+	left:0;
+	background-color: rgba(207,84,1,0.8);
+	width:250px;
+	height:90vh;
+	transform:translateX(-250px);
+	transition:transform 0.25s ease-in-out;
+	z-index:2;
+}
+
+nav ul{
+	flex-direction: column;
+	height:1000px;
+	margin-top:80px;
+	margin-left: 0px;
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+nav ul li,  nav ul li a {
+	height:130px;
+	font-size: 1.5em;
+}
+
+nav ul li a:hover {
+	border-top: none;
+
+}
+
+.navigation {
+	height: 100px;
+}
+
+input {
+	display: flex;
+	position: relative;
+	top: -11px;
+	width: 192.3px;
+	height: 45px;
+	background-color: #d97634;
+	color: #3eea41;
+	font-size: 18px;
+	border: 0;
+}
+
+input::placeholder {
+	background-color: #d97634;
+	font-size: 16px;
+	text-align: left;
+	color: #3eea41;
+}
+
+.menu {
+	display: block;
+	position: relative;
+	top: 70px;
+	left: 25px;
+	font-size: 30px;
+}
+
+form {
+	margin-left: -900px;
+	margin-top: 15px;
+}
+
+.boutonloupe {
+	display: block;
+	position: relative;
+	right: -345px;
+	top: 30px;
+	z-index: 2;
+	border: 0;
+	background: none;
+}
+
+.loupe {
+	width: 44px;
+	height: 40px;
+}
+
+
+}

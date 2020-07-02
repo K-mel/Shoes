@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Shoes</title>
+		<meta name="tallons femme" content="Talons – Ballerines – Bottines Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem, et semper purus.">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/shoes.css">
+		<link href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<!-- En tête du site-->
+		<button id="open" href="#">&#9776;</button>
+		<header>
+			<img  src="images/header.jpg" alt="photo de chaussures pour femme"><h1>Shoes</h1>
+		</header>
+
+			<!-- Mot "menu" caché en desktop apparait à 760px-->
+			<div class="menu">Menu</div>
+			
+			<div class="navigation">
+				<nav>
+					<button id="close" href="#">X</button>
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="#">Talons </a></li>
+						<li><a href="#">Ballerines </a></li>
+						<li><a href="#">Bottines</a></li>
+					</ul>
+				</nav>
+				<form name="recherche" method="post" action="recherche.php" >
+					<button class="boutonloupe" ><img class="loupe" src="images/loupe.png" alt="loupe de recherche"></button>
+					<input id="recherche" type="text" name="recherche" placeholder="Recherchez un modèle...">
+				</form>
+			</div>
+		
+			<div class="nbrarticles">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nous avons sélectionné pour vous :</p>
+				<!-- "nbr article" disparait et réapparait en bas de la page à 760px-->
+				<p class="articles" > Votre panier contient : <span id="nbrarticles">2 articles</span></p>
+			</div>
+			
+
+		<section>
+			<article>
+				<img class="chbleue1" class="ch2" src="images/prod1.jpg" alt="chaussures haute bleue"><img class="chnoir1" class="ch1" src="images/prod3.jpg" alt="chaussures basse noir">
+				<p class="p1">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem, et semper purus.
+				</p>
+				<button class="boutonacheter"><a href="#">Achetez</a></button>
+			</article>
+
+			<article >
+				<img class="chbleue2" class="ch2" src="images/prod1.jpg" alt="chaussures haute bleue"><img class="chnoir2" class="ch1" src="images/prod3.jpg" alt="chaussures basse noir">
+				<p class="p1">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem, et semper purus.
+				</p>
+				<button class="boutonacheter"><a href="#">Achetez</a></button>
+			</article>
+
+			<article>
+				<img class="ch3" src="images/prod2.jpg" alt="chaussures basse vert">
+				<p class="p1">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem, et semper purus.				
+				</p>
+				<button class="boutonacheter"><a href="#">Achetez</a></button>
+			</article>
+
+		</section>
+		<div class="sacarticles"><img src="images/panier_S2.png" alt="sac articles"> </div>
+
+		<p class="articles2" > Votre panier contient : <span id="nbrarticles">2 articles</span></p>
+			
+		<footer>
+			<div class="factwit">
+				<a href="https://twitter.com/starwarsfr"><img class="logo" src="images/logo_twt.png" alt="logo twiter"></a>&nbsp;&nbsp;<a href="http://www.allocine.fr/article/fichearticle_gen_carticle=18675917.html"><img class="logo" src="images/logo_fb.png" alt="logo facebook"></a>
+			</div>
+			<div class="bordurefin"></div>
+
+			<p>Crédit graphique : <a href="http://sarahpom.com/" target="_blank">sarahpom.com</a> – Crédit photographique :&nbsp; <a href="http://www.olivier-placet.com/" target="_blank">olivier-placet.com</a> </p>
+		</footer>
+<!-- code javascript pour faire apparaître le menu à gauche de l'écran à 760px-->
+		<script type="text/javascript">
+			jQuery(document).ready(function($){
+
+    		$("#open").click(function(){
+        	$("nav").addClass("open");
+    		});
+
+    		$("#close").click(function(){
+        	$("nav").removeClass("open");
+    		});
+		});
+		</script>
+
+	</body>
+</html>
